@@ -952,7 +952,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1596316928}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee6ed369db37aeb7c82b463724dc1545, type: 3}
+  m_Script: {fileID: 11500000, guid: 798b8a868329d498ab500852c21c2be3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Level01
@@ -1096,9 +1096,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1889530032}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2541e13db22941da4b62e10d15c532f7, type: 3}
+  m_Script: {fileID: 11500000, guid: 798b8a868329d498ab500852c21c2be3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneName: 
 --- !u!114 &1889530035
 MonoBehaviour:
   m_ObjectHideFlags: 0
