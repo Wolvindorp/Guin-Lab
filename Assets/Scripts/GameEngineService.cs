@@ -11,6 +11,7 @@ public class GameEngineService : MonoBehaviour
         Debug.Log("Welcome to the game");
         timerService = FindObjectOfType<TimerService>();
         personalHighscore = getPersonalHighscore();
+        Debug.Log(personalHighscore);
     }
     public void endGame() {
         Debug.Log("GameOver");
@@ -35,15 +36,15 @@ public class GameEngineService : MonoBehaviour
     }
 
     public void resetHighscore() {
-        setPersonalHighscore(0, true);
+        PlayerPrefs.DeleteKey("PersonalHighscore");
     }
 
     public float getPersonalHighscore() {
-        return PlayerPrefs.GetFloat("PersonalHighscore", 0);
+        return PlayerPrefs.GetFloat("PersonalHighscore");
     }
 
-    public void setPersonalHighscore(float newHighscore, bool force = false) {
-        if (personalHighscore > newHighscore || force) {
+    public void setPersonalHighscore(float newHighscore) {
+        if (personalHighscore > newHighscore || personalHighscore == 0) {
             PlayerPrefs.SetFloat("PersonalHighscore", newHighscore);
         }
     }

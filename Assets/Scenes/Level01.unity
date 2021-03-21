@@ -1872,7 +1872,6 @@ GameObject:
   - component: {fileID: 212550593}
   - component: {fileID: 212550596}
   - component: {fileID: 212550595}
-  - component: {fileID: 212550594}
   m_Layer: 5
   m_Name: PersonalBestTitle
   m_TagString: Untagged
@@ -1899,19 +1898,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 150, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &212550594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 212550592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cabf8465903901540a4e45b139e3474c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pbText: {fileID: 0}
 --- !u!114 &212550595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27237,7 +27223,6 @@ GameObject:
   - component: {fileID: 2089788562}
   - component: {fileID: 2089788565}
   - component: {fileID: 2089788564}
-  - component: {fileID: 2089788563}
   m_Layer: 5
   m_Name: TimerTextTitle
   m_TagString: Untagged
@@ -27264,19 +27249,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 150, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2089788563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2089788561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2820f5d64169b41592f078ae21c59dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timerText: {fileID: 0}
 --- !u!114 &2089788564
 MonoBehaviour:
   m_ObjectHideFlags: 0
