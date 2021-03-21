@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Kollision : MonoBehaviour
 {
+    public Movement playerMovement;
     private void OnCollisionEnter(Collision collisionInfo)
     {
         Debug.Log("Hier ist was passiert");
+        endGame();
     }
 
     private void OnCollisionStay(Collision collisionInfo)
@@ -18,15 +20,20 @@ public class Kollision : MonoBehaviour
     {
         
     }
-    // Start is called before the first frame update
-    void Start()
+
+    private void OnTriggerEnter(Collider other)
     {
-        
     }
 
-    // Update is called once per frame
-    void Update()
+    // Finally one method to end the game via the game manager
+    private void endGame() {
+        FindObjectOfType<GameEngineService>().endGame();
+    }
+
+    void OnControllerColliderHit(ControllerColliderHit hit)
     {
+        Debug.Log("Gewonnen hit");
+        Debug.Log(hit);
         
     }
 }

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
@@ -23,7 +21,6 @@ public class Movement : MonoBehaviour
             Debug.Log("Der characterController ist nicht gesetzt");
         } else {
             characterController.Move(finalMovement * Time.deltaTime);
-
         }
     }
 
@@ -42,10 +39,22 @@ public class Movement : MonoBehaviour
         Vector3 gravityMovement = new Vector3(0, -currentGravity, 0);
         currentGravity += gravity * Time.deltaTime;
 
-        if ( characterController.isGrounded && currentGravity > 1f) {
+        if (characterController.isGrounded && currentGravity > 1f) {
             currentGravity = 1f;
         }
+        // if (characterController.attachedRigidbody.position.y < -1) {
+        //     endGame();
+        // }
 
         return gravityMovement;
+    }
+
+    // Finally one method to end the game via the game manager
+    private void endGame() {
+        FindObjectOfType<GameEngineService>().endGame();
+    }
+
+    private void OnControllerColliderHit() {
+        // Debug.Log("Hier ist was passiert");
     }
 }
