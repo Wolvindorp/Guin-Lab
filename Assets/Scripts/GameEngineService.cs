@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 public class GameEngineService : MonoBehaviour
 {
     public string sceneName;
+    static GameObject RunningGameState;
+    public string loadState;
     public float personalHighscore;
     private TimerService timerService;
 
@@ -32,6 +34,9 @@ public class GameEngineService : MonoBehaviour
 
     public void goToScene()
     {
+        if (loadState == "currentGame") {
+            Debug.Log("Load state");
+        }
         SceneManager.LoadScene(sceneName);
     }
 
